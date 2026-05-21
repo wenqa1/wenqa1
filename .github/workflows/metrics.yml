@@ -17,3 +17,34 @@ jobs:
           plugin_languages: yes
           plugin_languages_details: percentage, bytes-size
           plugin_lines: yes
+
+      - name: Localize to Chinese
+        run: |
+          sed -i \
+            -e 's/Followed by/关注者/g' \
+            -e 's/Joined GitHub/加入 GitHub/g' \
+            -e 's/Most used languages/常用语言/g' \
+            -e 's/Contributed to/贡献/g' \
+            -e 's/repositories/个仓库/g' \
+            -e 's/Repository/仓库/g' \
+            -e 's/Stargazers/星标/g' \
+            -e 's/Watchers/关注/g' \
+            -e 's/Forkers/复刻/g' \
+            -e 's/Sponsors/赞助/g' \
+            -e 's/Packages/包/g' \
+            -e 's/Releases/发布/g' \
+            -e 's/No license/无许可证/g' \
+            -e 's/added,/新增,/g' \
+            -e 's/removed/删除/g' \
+            -e 's/byte used/字节使用/g' \
+            -e 's/ years ago/ 年前/g' \
+            -e 's/ year ago/ 年前/g' \
+            github-metrics.svg
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add github-metrics.svg
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update github-metrics.svg [skip ci]"
+          git push
