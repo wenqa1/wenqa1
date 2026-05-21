@@ -9,7 +9,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: actions/checkout@v4
+
+      - uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           filename: github-metrics.svg
@@ -20,6 +22,7 @@ jobs:
 
       - name: Localize to Chinese
         run: |
+          ls -la github-metrics.svg && \
           sed -i \
             -e 's/Followed by/关注者/g' \
             -e 's/Joined GitHub/加入 GitHub/g' \
@@ -39,7 +42,8 @@ jobs:
             -e 's/byte used/字节使用/g' \
             -e 's/ years ago/ 年前/g' \
             -e 's/ year ago/ 年前/g' \
-            github-metrics.svg
+            github-metrics.svg && \
+          echo "OK: Chinese localization applied"
 
       - name: Commit and Push
         run: |
