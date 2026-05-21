@@ -9,7 +9,5 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Vibe Coding](https://img.shields.io/badge/-Vibe%20Coding-8B5CF6?style=flat)
 
-![GitHub followers](https://img.shields.io/github/followers/wenqa1?style=flat&label=Followers)
-![GitHub User's stars](https://img.shields.io/github/stars/wenqa1?style=flat&label=Stars)
-![Profile views](https://badges.pufler.dev/visits/wenqa1/wenqa1?style=flat&label=Visits)
+![Metrics](https://raw.githubusercontent.com/wenqa1/wenqa1/main/github-metrics.svg)
 
