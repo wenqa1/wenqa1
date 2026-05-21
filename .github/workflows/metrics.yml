@@ -22,7 +22,6 @@ jobs:
 
       - name: Localize to Chinese
         run: |
-          ls -la github-metrics.svg && \
           sed -i \
             -e 's/Followed by/关注者/g' \
             -e 's/Joined GitHub/加入 GitHub/g' \
@@ -42,8 +41,7 @@ jobs:
             -e 's/byte used/字节使用/g' \
             -e 's/ years ago/ 年前/g' \
             -e 's/ year ago/ 年前/g' \
-            github-metrics.svg && \
-          echo "OK: Chinese localization applied"
+            github-metrics.svg
 
       - name: Commit and Push
         run: |
