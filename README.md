@@ -9,5 +9,6 @@
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Vibe Coding](https://img.shields.io/badge/-Vibe%20Coding-8B5CF6?style=flat)
 
-![GitHub 统计](https://raw.githubusercontent.com/wenqa1/wenqa1/main/github-stats.svg)
-![常用语言](https://raw.githubusercontent.com/wenqa1/wenqa1/main/github-top-langs.svg)
+**📊 GitHub 统计**
+
+![Metrics](https://raw.githubusercontent.com/wenqa1/wenqa1/main/github-metrics.svg)
