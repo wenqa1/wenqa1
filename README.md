@@ -9,5 +9,5 @@
 
 ![language](https://github-readme-stats.vercel.app/api/top-langs?username=wenqa1&locale=cn&show_icons=true&theme=transparent&card_width=470&hide_border=true)
 
-![streak](https://streak-stats.demolab.com?user=wenqa1&locale=zh&hide_border=true&background=FFFFFF00&stroke=FF8FC0&ring=FF6FB5&fire=FF6FB5&currStreakNum=24292F&sideNums=24292F&currStreakLabel=FF6FB5&sideLabels=656D76&dates=9AA0A6)
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=wenqa1&theme=github)
 </div>
